@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Applet/src"/>
+	<classpathentry kind="src" path="Expressoes1/src"/>
+	<classpathentry kind="src" path="Expressoes2/src"/>
+	<classpathentry kind="src" path="Funcional1/src"/>
+	<classpathentry kind="src" path="Funcional2/src"/>
+	<classpathentry kind="src" path="Funcional3/src"/>
+	<classpathentry kind="src" path="Imperativa1/src"/>
+	<classpathentry kind="src" path="Imperativa2/src"/>
+	<classpathentry kind="src" path="Objetos1/src"/>
+	<classpathentry kind="src" path="Objetos2/src"/>
+	<classpathentry kind="lib" path="Expressoes1/target/Expressoes1-0.0.1.jar"/>
+	<classpathentry kind="lib" path="Expressoes2/target/Expressoes2-0.0.1.jar"/>
+	<classpathentry kind="lib" path="Funcional1/target/Funcional1-0.0.1.jar"/>
+	<classpathentry kind="lib" path="Funcional2/target/Funcional2-0.0.1.jar"/>
+	<classpathentry kind="lib" path="Funcional3/target/Funcional3-0.0.1.jar"/>
+	<classpathentry kind="lib" path="Imperativa1/target/Imperativa1-0.0.1.jar"/>
+	<classpathentry kind="lib" path="Imperativa2/target/Imperativa2-0.0.1.jar"/>
+	<classpathentry kind="lib" path="Objetos1/target/Objetos1-0.0.1.jar"/>
+	<classpathentry kind="lib" path="Objetos2/target/Objetos2-0.0.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="output" path="Objetos2/target/classes"/>
+</classpath>

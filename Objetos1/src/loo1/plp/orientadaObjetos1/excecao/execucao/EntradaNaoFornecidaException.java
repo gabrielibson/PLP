@@ -5,6 +5,11 @@ package loo1.plp.orientadaObjetos1.excecao.execucao;
  */
 public class EntradaNaoFornecidaException extends Exception {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
      * Construtor.
      */
     public EntradaNaoFornecidaException() {

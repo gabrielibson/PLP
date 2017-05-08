@@ -189,12 +189,11 @@ public class ValorFuncao implements ValorAbstrato {
 		return listaTipoCasamento;
 	}
 	
-	@SuppressWarnings("unchecked")
 	private void comparaTiposExpressoes(AmbienteCompilacao amb,
 			List<Tipo> listaTipoCasamento, DecPadrao decPadrao) {
 		
 		int contatorExpressao = 0;
-		for ( ExpPadrao expPadrao : decPadrao.getPadrao().getListaExpPadrao() ) {
+		for ( ExpPadrao<?> expPadrao : decPadrao.getPadrao().getListaExpPadrao() ) {
 			Expressao exp = expPadrao.getExpressao();
 			Tipo tipoCasamento = listaTipoCasamento.get(contatorExpressao);
 			
@@ -209,12 +208,11 @@ public class ValorFuncao implements ValorAbstrato {
 		}
 	}
 	
-	@SuppressWarnings("unchecked")
 	private List<Tipo> mapeiaTiposExpressoes(AmbienteCompilacao amb, DecPadrao decPadrao) {
 		List<Tipo> listaTipoCasamento;
 		listaTipoCasamento = new ArrayList<Tipo>();
 		
-		for ( ExpPadrao expPadrao : decPadrao.getPadrao().getListaExpPadrao() ) {
+		for ( ExpPadrao<?> expPadrao : decPadrao.getPadrao().getListaExpPadrao() ) {
 			Expressao exp = expPadrao.getExpressao();
 			
 			if ( exp instanceof Id ) {

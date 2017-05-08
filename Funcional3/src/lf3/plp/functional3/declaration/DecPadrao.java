@@ -84,23 +84,21 @@ public class DecPadrao {
 		return result.toString();
 	}
 	
-	@SuppressWarnings("unchecked")
 	public boolean checaTipo(AmbienteCompilacao ambiente)
 			throws VariavelNaoDeclaradaException, VariavelJaDeclaradaException {
 		
-		for ( ExpPadrao expPadrao : this.padrao.getListaExpPadrao() ) {
+		for ( ExpPadrao<?> expPadrao : this.padrao.getListaExpPadrao() ) {
 			expPadrao.checaTipo(ambiente);
 		}
 		return this.expressao.checaTipo(ambiente);
 	}
 	
-	@SuppressWarnings("unchecked")
 	public Tipo getTipo(AmbienteCompilacao ambiente)
 			throws VariavelNaoDeclaradaException, VariavelJaDeclaradaException {
 		
 		ambiente.incrementa();
 		
-		for ( ExpPadrao expPadrao : this.padrao.getListaExpPadrao() ) {
+		for ( ExpPadrao<?> expPadrao : this.padrao.getListaExpPadrao() ) {
 			expPadrao.checaTipo(ambiente);
 		}
 		
@@ -111,7 +109,7 @@ public class DecPadrao {
 		
 		// Obt�m o tipo inferido de cada par�metro.
 		List<Tipo> params = new ArrayList<Tipo>(this.getNumeroExpressoes());
-		for ( ExpPadrao expPadrao : this.padrao.getListaExpPadrao() ) {
+		for ( ExpPadrao<?> expPadrao : this.padrao.getListaExpPadrao() ) {
 			if ( expPadrao instanceof ExpPadraoId ) {
 				Id id = (Id) expPadrao.getExpressao();
 				Tipo argTipo = ((TipoPolimorfico) ambiente.get(id)).inferir();

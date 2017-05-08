@@ -9,6 +9,11 @@ import loo1.plp.expressions2.expression.Id;
  */
 public class ClasseNaoDeclaradaException extends Exception {
     /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	/**
      * Construtor
      * @param id Identificador representando a classe.
      */

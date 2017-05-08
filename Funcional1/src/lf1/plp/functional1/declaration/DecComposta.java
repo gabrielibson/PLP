@@ -1,15 +1,9 @@
 package lf1.plp.functional1.declaration;
 
-import java.util.Map;
-
-import lf1.plp.expressions1.util.Tipo;
-import lf1.plp.expressions2.expression.Id;
-import lf1.plp.expressions2.expression.Valor;
 import lf1.plp.expressions2.memory.AmbienteCompilacao;
 import lf1.plp.expressions2.memory.VariavelJaDeclaradaException;
 import lf1.plp.expressions2.memory.VariavelNaoDeclaradaException;
 import lf1.plp.functional1.memory.AmbienteExecucaoFuncional;
-import lf1.plp.functional1.util.DefFuncao;
 
 public class DecComposta implements DeclaracaoFuncional {
 	private DeclaracaoFuncional d1;

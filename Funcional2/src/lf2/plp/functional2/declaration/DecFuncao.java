@@ -4,12 +4,10 @@ import static lf2.plp.expressions1.util.ToStringProvider.listToString;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import lf2.plp.expressions1.util.Tipo;
 import lf2.plp.expressions2.expression.Expressao;
 import lf2.plp.expressions2.expression.Id;
-import lf2.plp.expressions2.expression.Valor;
 import lf2.plp.expressions2.memory.AmbienteCompilacao;
 import lf2.plp.expressions2.memory.AmbienteExecucao;
 import lf2.plp.expressions2.memory.VariavelJaDeclaradaException;

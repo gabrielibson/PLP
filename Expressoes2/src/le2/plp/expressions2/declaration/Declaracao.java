@@ -1,10 +1,5 @@
 package le2.plp.expressions2.declaration;
 
-import java.util.Map;
-
-import le2.plp.expressions1.util.Tipo;
-import le2.plp.expressions2.expression.Id;
-import le2.plp.expressions2.expression.Valor;
 import le2.plp.expressions2.memory.AmbienteCompilacao;
 import le2.plp.expressions2.memory.AmbienteExecucao;
 import le2.plp.expressions2.memory.VariavelJaDeclaradaException;

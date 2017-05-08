@@ -1,15 +1,7 @@
 package lf3.plp.functional2.expression;
 
-import static lf3.plp.expressions1.util.ToStringProvider.listToString;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import lf3.plp.expressions1.util.Tipo;
 import lf3.plp.expressions2.expression.Expressao;
-import lf3.plp.expressions2.expression.Id;
 import lf3.plp.expressions2.expression.Valor;
 import lf3.plp.expressions2.memory.AmbienteCompilacao;
 import lf3.plp.expressions2.memory.AmbienteExecucao;
@@ -18,8 +10,6 @@ import lf3.plp.expressions2.memory.ContextoExecucao;
 import lf3.plp.expressions2.memory.VariavelJaDeclaradaException;
 import lf3.plp.expressions2.memory.VariavelNaoDeclaradaException;
 import lf3.plp.functional1.declaration.DeclaracaoFuncional;
-import lf3.plp.functional1.util.TipoPolimorfico;
-import lf3.plp.functional2.declaration.DecFuncao;
 
 public class ExpDeclaracao implements Expressao {
 

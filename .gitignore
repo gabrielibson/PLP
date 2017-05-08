@@ -1,9 +1,7 @@
 *.lock
 .metadata/
 .recommenders/
-.classpath
 .gitignore
-.project
 */bin/
 */.classpath
 */.project

@@ -29,7 +29,7 @@ public class AppletInterpretadorPLP extends Applet {
 	private JLabel jLabelCodigo = null;
 	private JLabel jLabelMasg = null;
 	private JScrollPane jScrollPaneCodigo = null;
-	private JComboBox jComboBoxLinguagens = null;
+	private JComboBox<String> jComboBoxLinguagens = null;
 	private JLabel jLabelExecutar = null;
 
 	private JButton jButtonExecutar = null;
@@ -70,7 +70,7 @@ public class AppletInterpretadorPLP extends Applet {
 			jLabelListaEntrada.setBounds(new java.awt.Rectangle(20, 194, 127,
 					20));
 			jLabelListaEntrada
-					.setToolTipText("informe os valores da lista de entrada separados por espaços");
+					.setToolTipText("informe os valores da lista de entrada separados por espaï¿½os");
 			jLabelListaEntrada.setText("Lista de Entrada");
 			jLabelExecutar = new JLabel();
 			jLabelExecutar.setBounds(new java.awt.Rectangle(19, 434, 157, 17));
@@ -80,7 +80,7 @@ public class AppletInterpretadorPLP extends Applet {
 			jLabelMasg.setText("Mensagens");
 			jLabelCodigo = new JLabel();
 			jLabelCodigo.setBounds(new java.awt.Rectangle(20, 33, 70, 16));
-			jLabelCodigo.setText("Código");
+			jLabelCodigo.setText("Cï¿½digo");
 			jContentPane = new JPanel();
 			jContentPane.setLayout(null);
 			this.setLayout(null);
@@ -160,9 +160,9 @@ public class AppletInterpretadorPLP extends Applet {
 	 * 
 	 * @return javax.swing.JComboBox
 	 */
-	private JComboBox getJComboBoxLinguagens() {
+	private JComboBox<String> getJComboBoxLinguagens() {
 		if (jComboBoxLinguagens == null) {
-			jComboBoxLinguagens = new JComboBox();
+			jComboBoxLinguagens = new JComboBox<String>();
 			jComboBoxLinguagens
 					.setBounds(new java.awt.Rectangle(19, 7, 250, 20));
 			jComboBoxLinguagens
@@ -233,7 +233,7 @@ public class AppletInterpretadorPLP extends Applet {
 			jTextFieldListaEntrada.setBounds(new java.awt.Rectangle(20, 218,
 					350, 20));
 			jTextFieldListaEntrada
-					.setToolTipText("informe os valores da lista de entrada separados por espaços");
+					.setToolTipText("informe os valores da lista de entrada separados por espaï¿½os");
 		}
 		return jTextFieldListaEntrada;
 	}
